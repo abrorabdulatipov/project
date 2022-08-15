@@ -34,26 +34,26 @@
 # root.mainloop()
 #
 #
-# from tkinter import *
-# root = Tk()
-# root.geometry('200x150')
-# count = 0
-# def f():
-#     global count
-#     count += 1
+from tkinter import *
+root = Tk()
+root.geometry('200x150')
+count = 0
+def f():
+    global count
+    count += 1
+
+    label.config(text=count)
+label = Label(root, text='0', width=10, height=3)
+label.pack()
+
+btn = Button(root, text='Add', bg='grey', width=10, height=3, command=f)
+btn.pack()
+btn1 = Button(root, text='remove', bg='red', width=10, height=3, command=f)
+btn1.pack()
+
+root.mainloop()
 #
-#     label.config(text=count)
-# label = Label(root, text='0', width=10, height=3)
-# label.pack()
-#
-# btn = Button(root, text='Add', bg='grey', width=10, height=3, command=f)
-# btn.pack()
-# btn1 = Button(root, text='remove', bg='red', width=10, height=3, command=f)
-# btn1.pack()
-#
-# root.mainloop()
-#
-#
+'RANG'
 # from tkinter import *
 # root = Tk()
 # label1 = Label(root, text='option1', bg = 'teal', fg = 'black')
@@ -69,7 +69,7 @@
 # label5.grid(row=1, column=1, columnspan=2)
 #
 # root.mainloop()
-#
+'yozuv'
 #
 # from tkinter import *
 # root = Tk()

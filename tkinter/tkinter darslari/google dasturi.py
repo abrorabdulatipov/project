@@ -2,10 +2,10 @@ from tkinter import *
 import webbrowser
 
 root = Tk()
-root.title('Qidruv tizmi')
+root.title('Google')
 root.geometry('500x300')
-root.config(bg='#00001a')
-
+root.config(bg='black')
+root.resizable(False, False)
 
 def qidir():
     webbrowser.open_new_tab(f'http://www.google.com/search?btnG=1&q=%{sech.get()}')
@@ -53,19 +53,19 @@ chiqish.add_command(label='chiqish', command=quit)
 menubar.add_cascade(label='Chqish', menu=chiqish)
 root.config(menu=menubar)
 
-lb = Label(root, text='Google ', font=('Arial', 15),
+lb = Label(root, text='Google ', font=('Arial', 40),
            bg='#00001a', fg='white').pack()
 
-soz = Label(root, text='qidradigan so\'zni kiriting:',
-            font=('Arial', 15), bg='black', fg='white').place(x=125, y=75)
+soz = Label(root, text='Qdruv Bering:',
+            font=('Arial', 15), bg='black', fg='white').place(x=210, y=75)
 
 sech = Entry(root, fg='#00001a', font=('Arail 15'),
-             relief=SOLID, width=25, cursor='spider')
+             relief=SOLID, width=25, cursor='hand2')
 sech.place(x=125, y=100)
 
-qidr = Button(root, text='Qidirish', bg='blue',
+qidr = Button(root, text='Enter ↩ ', bg='blue',
               fg='white', font=('Arial 15'),
               relief=SOLID, cursor='hand2',
-              width=25, command=qidir).place(x=120, y=125)
+              width=25, command=qidir).place(x=120, y=255)
 
 root.mainloop()
